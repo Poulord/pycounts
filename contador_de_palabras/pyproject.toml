@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "contador_de_palabras"
-version = "B"
+name = "pycounts"
+version = "0.1.0"
 description = "Cuenta la cantidad de palabras de cualquier texto"
 authors = ["Pablo Garcia Ollero"]
 license = "None"
@@ -8,6 +8,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+matplotlib = "^3.10.3"
 
 
 [build-system]
