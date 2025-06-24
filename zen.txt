@@ -1,0 +1,7 @@
+The Zen of Python, by Tim Peters
+
+Poulord, poulord, poulord, poulord, poulord.
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+...
