@@ -4,7 +4,7 @@ from string import punctuation
 
 def load_text(input_file):
         """Load text from a text file and return as a string."""
-        with open(input_file, "r") as file:
+        with open(input_file, "r",  encoding="utf-8") as file:
             text = file.read()
         return text
     
@@ -12,7 +12,8 @@ def load_text(input_file):
 def clean_text(text):
         """Lowercase and remove punctuation from a string."""
         text = text.lower()
-        for p in punctuation:
+        extra_punct = '“”‘’' 
+        for p in punctuation + extra_punct:
             text = text.replace(p, "")
         return text
 
@@ -25,8 +26,13 @@ def count_words(input_file):
         return Counter(words)
     
 count_words("zen.txt")
-#count_words("Pruebas.txt")
+count_words("Pruebas.txt")
 
+print("\n")
 print(count_words("zen.txt"))
-#print(count_words("Pruebas.txt"))
+print("\n")
+print("---------------------------------------------------------------------------------------------------------------")
+print("\n")
+print(count_words("Pruebas.txt"))
+print("\n")
   
